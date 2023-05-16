@@ -1,15 +1,12 @@
-package com.example.flywaydemo.domain;
+package com.example.flywaydemo.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-/**
- * Created by rajeevkumarsingh on 20/08/17.
- */
 @Entity
-@Table(name = "users")
-public class User {
+@Table(name = "customers")
+public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

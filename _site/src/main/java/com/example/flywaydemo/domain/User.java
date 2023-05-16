@@ -1,4 +1,4 @@
-package com.example.flywaydemo.domain;
+package com.example.flywaydemo.repository;
 
 import org.hibernate.validator.constraints.NotBlank;
 

@@ -1,4 +1,4 @@
-package com.example.flywaydemo.domain;
+package com.example.flywaydemo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

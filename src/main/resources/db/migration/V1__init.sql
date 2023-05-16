@@ -1,8 +1,14 @@
-CREATE TABLE users (
-  id bigint(20) NOT NULL AUTO_INCREMENT,
-  username varchar(100) NOT NULL,
-  first_name varchar(50) NOT NULL,
-  last_name varchar(50) DEFAULT NULL,
-  PRIMARY KEY (id),
-  UNIQUE KEY UK_username (username)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE customers (
+                         id BIGINT,
+                         username varchar(255),
+                         first_name varchar(255),
+                         last_name varchar(255)
+);
+
+
+CREATE TABLE orders (
+                           id BIGINT,
+                           customer_id int,
+                           product_name varchar(255),
+                           price int
+);
